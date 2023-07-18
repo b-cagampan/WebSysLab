@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    border-bottom: 10px solid #FFDB7D;
+}
+header img {
+    height: 70px;
+    position: relative;
+    left: 45%;
+    right: 50%;
+}
+
+body {
+    background-color: rgb(245, 153, 153);
+    overflow: hidden;
+}
+
+.main-bg {
+    filter: opacity(0.5);
+    position: relative;
+}
+
+.container {
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    display: block;
+    top: 2%;
+}
+
+
+form {
+    background-color: white;
+    color: black;
+}
+
