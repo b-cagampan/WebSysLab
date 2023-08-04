@@ -146,7 +146,7 @@
 </head>
 <body>
     <header>
-        <a href="StudentMainPage.html" class="return-button">
+        <a href="studentPage.php" class="return-button">
             <span class="ret">
 					<img src="https://cdn-icons-png.flaticon.com/512/109/109618.png?fbclid=IwAR0pUR46hLcBRyU0d9UE_hz_2cCrNMrLyBwinkajzEDlVk1ZKAeoZ8-pzas" alt="Return">
 			</span> 

@@ -182,7 +182,7 @@
 </head>
 <body>
     <header style="text-decoration: none;">
-        <a href="StudentMainPage.html" class="return-button">
+        <a href="studentPage.php" class="return-button">
             <span class="ret">
                 <div class="header-image-container" style="text-decoration: none;">
                     <img src="https://cdn-icons-png.flaticon.com/512/109/109618.png?fbclid=IwAR0pUR46hLcBRyU0d9UE_hz_2cCrNMrLyBwinkajzEDlVk1ZKAeoZ8-pzas" alt="Return">
@@ -205,6 +205,12 @@
                     <input type="number" name="studentNum" placeholder="Enter student number" required />
                 </div>
             </div>
+            <div class="column">
+                <div class="input-box">
+                    <label>Date Today</label>
+                    <input type="date" name="date" required />
+                </div>
+            </div>
             <div class="input-box">
                 <label>E-Mail</label>
                 <input type="text" name="email" placeholder="Enter email address" required />
@@ -223,6 +229,7 @@
 if($_SERVER["REQUEST_METHOD"]== "POST") {
     $fullname = ($_POST['fullname']);
     $studentNum = ($_POST['studentNum']);
+    $date = ($_POST['date']);
     $email = ($_POST['email']);
     $notes = ($_POST['notes']);
 
@@ -237,8 +244,9 @@ if($_SERVER["REQUEST_METHOD"]== "POST") {
 
     if($bool) {
         mysqli_query($con, "INSERT INTO req_document(fullname, studentNum, email, note) VALUES('$fullname', '$studentNum', '$email', '$notes')");
-        Print'<script>alert("Successfully Request for Document");</script>';
+        Print'<script>alert("Submitted!, Your request document will be mail through your email, Thank you!");</script>';
         Print'<script>window.location.assign("documents.php");</script>';
+
     } else {
         Print '<script>alert("Error Occured");</script>';
         Print'<script>window.location.assign("documents.php");</script>';
