@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: roboto;
+    background-color: rgb(232, 231, 231);
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    margin-bottom: 10px;
+    background-color: #FFDB7D;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.appointment {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.appointment h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.appointment p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 100%;
+}
+
+/* Form Container */
+.card-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 60%;
+}
+
+/* Radio Button Styles */
+.radio-btn label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.row-radio-btn {
+    display: flex;
+    gap: 10px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.radio-btn {
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Input Field Styles */
+.input-field input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.input-field input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;    
+}
+
+table th {
+    text-align: left;
+    font-weight: lighter;
+}
+
+table {
+    width: 100%;
+}
+
+/* Button Styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Status Link Styles */
+.status {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #007BFF;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.status:hover {
+    text-decoration: underline;
+}

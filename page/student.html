@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/login.css">
+    <title>CampusCare</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Welcome to Campus Care</h1>
+            <p>Your gateway to campus health and wellness.</p>
+        </div>
+        <div class="right-section">
+            <h2>Login as student</h2>
+            <form id="form" action="../functions/loginStudent.php" method="post" autocomplete="off">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="emailAdd" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" class="thePassword">
+                <div class="btn-submit">
+                    <button type="submit" id="submit-btn">LOGIN</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+<script src="../functions/button.js"></script>
+</html>

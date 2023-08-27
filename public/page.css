@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: roboto;
+    background-color: rgb(232, 231, 231);
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    margin-bottom: 10px;
+    background-color: #FFDB7D;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.appointment {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.appointment h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.appointment p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    font-weight: lighter;
+}
+
+table tr {
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table th a {
+    padding: 5px 30px 5px;
+    background-color: #FFDB7D;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background:none;
+    cursor: pointer;
+}
+
+table th a:hover {
+    background-color: #FFB757;
+}
+
+select {
+    border: none;
+    background-color: rgb(232, 231, 231);
+    padding: 5px 30px 5px;
+    border-radius: 30px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 100%;
+}
+
+.card-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 40%;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.card-item i {
+    font-size: 50px;
+    color: #FFDB7D;
+    line-height: 90px;
+    margin-bottom: 10px;
+}
+
+.card-item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-item:hover a {
+    color: #faca53;
+}
